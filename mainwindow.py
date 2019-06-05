@@ -241,7 +241,7 @@ class MainWindow(QtWidgets.QMainWindow,Ui_MainWindow):
 
         self.__readsettings()
 
-        if(self.lcid == QtCore.QLocale.Japanese):
+        if(self.lcid == int(QtCore.QLocale.Japanese)):
             translator = QtCore.QTranslator()
             translator.load(":/qm/ShotList_ja_JP.qm")
             app.installTranslator(translator)
@@ -277,9 +277,6 @@ class MainWindow(QtWidgets.QMainWindow,Ui_MainWindow):
 
         self.__initEv()
 
-        # とりあえず
-        # self.comboBox_SourceDir.setEditText("D&D here")
-        # self.lineEdit_SourceDir.setText(self.tr("D&D here"))
         self.lineEdit_SourceDir.setPlaceholderText(self.tr("input Folder path by D&D or src dialog"))
 
     def __initEv(self):
