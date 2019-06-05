@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/qm">
+        <file>ShotList_ja_JP.qm</file>
+    </qresource>
+    <qresource prefix="/txt">
+        <file>ShotListLic.txt</file>
+    </qresource>
+</RCC>
